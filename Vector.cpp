@@ -19,12 +19,10 @@ void Vector::setY(Number y) {
     this->y = y;
 }
 
-// Вычисляем длину вектора 
 Number Vector::getR() const {
     return createNumber(sqrt(x.getValue() * x.getValue() + y.getValue() * y.getValue()));
 }
 
-// Вычисляем угол вектора в полярных координатах
 Number Vector::getPhi() const {
     return createNumber(atan2(y.getValue(), x.getValue()));
 }
@@ -33,6 +31,6 @@ Vector Vector::operator+(const Vector& other) const {
     return Vector(x + other.x, y + other.y);
 }
 
-// Глобальные константные векторы
 const Vector zeroVector(zero, zero);
+
 const Vector oneVector(one, one);
