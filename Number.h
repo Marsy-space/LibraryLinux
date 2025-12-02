@@ -7,7 +7,7 @@ public:
     Number(double value = 0.0);
     double getValue() const;
     void setValue(double value);
-    // Арифметические операции
+    
     Number operator+(const Number& other) const;
     Number operator-(const Number& other) const;
     Number operator*(const Number& other) const;
@@ -17,5 +17,6 @@ public:
 
 extern const Number zero;
 extern const Number one;
+
 
 Number createNumber(double value);
